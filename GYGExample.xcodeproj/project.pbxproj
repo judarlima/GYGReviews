@@ -22,13 +22,17 @@
 		87B1D49F2220EF0F005681C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D49E2220EF0F005681C9 /* AppDelegate.swift */; };
 		87B1D4A62220EF10005681C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B1D4A52220EF10005681C9 /* Assets.xcassets */; };
 		87B1D4A92220EF10005681C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B1D4A72220EF10005681C9 /* LaunchScreen.storyboard */; };
-		87B1D4B42220EF10005681C9 /* GYGExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D4B32220EF10005681C9 /* GYGExampleTests.swift */; };
 		87B1D4C22220EFD8005681C9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D4C12220EFD8005681C9 /* Coordinator.swift */; };
 		87E2ED2F2221BF2A00171BA0 /* ReviewsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED2E2221BF2A00171BA0 /* ReviewsListInteractor.swift */; };
 		87E2ED312221BFF000171BA0 /* ReviewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED302221BFF000171BA0 /* ReviewsListPresenter.swift */; };
 		87E2ED342221D00D00171BA0 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED322221D00D00171BA0 /* ReviewTableViewCell.swift */; };
 		87E2ED352221D00D00171BA0 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E2ED332221D00D00171BA0 /* ReviewTableViewCell.xib */; };
 		87E2ED372221E37000171BA0 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED362221E37000171BA0 /* ReviewViewModel.swift */; };
+		87E2ED3E2221FAF600171BA0 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED3D2221FAF600171BA0 /* CoordinatorTests.swift */; };
+		87E2ED442221FD5400171BA0 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 87E2ED432221FD5400171BA0 /* reviews.json */; };
+		87E2ED462221FDF500171BA0 /* ReviewsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED452221FDF500171BA0 /* ReviewsManagerTests.swift */; };
+		87E2ED472222025400171BA0 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 87E2ED432221FD5400171BA0 /* reviews.json */; };
+		87E2ED49222204F800171BA0 /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED48222204F800171BA0 /* APIServiceMock.swift */; };
 		D3D4B6C80F3ECD89ECBA8C67 /* Pods_GYGExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E4277E0DD94794BD37CF7B /* Pods_GYGExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +68,6 @@
 		87B1D4A82220EF10005681C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87B1D4AA2220EF10005681C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B1D4AF2220EF10005681C9 /* GYGExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYGExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87B1D4B32220EF10005681C9 /* GYGExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYGExampleTests.swift; sourceTree = "<group>"; };
 		87B1D4B52220EF10005681C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B1D4C12220EFD8005681C9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		87E2ED2E2221BF2A00171BA0 /* ReviewsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListInteractor.swift; sourceTree = "<group>"; };
@@ -72,6 +75,10 @@
 		87E2ED322221D00D00171BA0 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		87E2ED332221D00D00171BA0 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
 		87E2ED362221E37000171BA0 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		87E2ED3D2221FAF600171BA0 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		87E2ED432221FD5400171BA0 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
+		87E2ED452221FDF500171BA0 /* ReviewsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsManagerTests.swift; sourceTree = "<group>"; };
+		87E2ED48222204F800171BA0 /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
 		8FC5E8FDFFE0EC0777D2C68A /* Pods-GYGExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYGExample/Pods-GYGExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F719A7A404281F140C82D7FE /* Pods_GYGExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYGExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,7 +194,9 @@
 		87B1D4B22220EF10005681C9 /* GYGExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				87B1D4B32220EF10005681C9 /* GYGExampleTests.swift */,
+				87E2ED412221FCFB00171BA0 /* Mocks */,
+				87E2ED3B2221F9DE00171BA0 /* Coordinator */,
+				87E2ED3A2221F9C300171BA0 /* ReviewList */,
 				87B1D4B52220EF10005681C9 /* Info.plist */,
 			);
 			path = GYGExampleTests;
@@ -242,6 +251,55 @@
 				87749EF922217275007A8CA7 /* Manager */,
 			);
 			path = ReviewsList;
+			sourceTree = "<group>";
+		};
+		87E2ED3A2221F9C300171BA0 /* ReviewList */ = {
+			isa = PBXGroup;
+			children = (
+				87E2ED422221FD0200171BA0 /* Manager */,
+				87E2ED402221FCF300171BA0 /* Presenter */,
+				87E2ED3F2221FCE500171BA0 /* Interactor */,
+			);
+			path = ReviewList;
+			sourceTree = "<group>";
+		};
+		87E2ED3B2221F9DE00171BA0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				87E2ED3D2221FAF600171BA0 /* CoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		87E2ED3F2221FCE500171BA0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		87E2ED402221FCF300171BA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		87E2ED412221FCFB00171BA0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				87E2ED432221FD5400171BA0 /* reviews.json */,
+				87E2ED48222204F800171BA0 /* APIServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		87E2ED422221FD0200171BA0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				87E2ED452221FDF500171BA0 /* ReviewsManagerTests.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		C9550383E7679B015CD6EC6F /* Frameworks */ = {
@@ -309,6 +367,7 @@
 					};
 					87B1D4AE2220EF10005681C9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 87B1D49A2220EF0F005681C9;
 					};
 				};
@@ -337,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E2ED472222025400171BA0 /* reviews.json in Resources */,
 				87749F0022218231007A8CA7 /* ReviewsViewController.xib in Resources */,
 				87B1D4A92220EF10005681C9 /* LaunchScreen.storyboard in Resources */,
 				87E2ED352221D00D00171BA0 /* ReviewTableViewCell.xib in Resources */,
@@ -348,6 +408,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E2ED442221FD5400171BA0 /* reviews.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +511,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B1D4B42220EF10005681C9 /* GYGExampleTests.swift in Sources */,
+				87E2ED3E2221FAF600171BA0 /* CoordinatorTests.swift in Sources */,
+				87E2ED462221FDF500171BA0 /* ReviewsManagerTests.swift in Sources */,
+				87E2ED49222204F800171BA0 /* APIServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +699,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N72WY42PA7;
 				INFOPLIST_FILE = GYGExampleTests/Info.plist;
@@ -646,6 +710,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.GYGExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYGExample.app/GYGExample";
@@ -658,6 +724,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N72WY42PA7;
 				INFOPLIST_FILE = GYGExampleTests/Info.plist;
@@ -668,6 +735,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.GYGExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYGExample.app/GYGExample";
