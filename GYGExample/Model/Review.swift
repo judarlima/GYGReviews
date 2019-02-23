@@ -11,13 +11,13 @@ import Foundation
 struct Review {
     let reviewID: Int
     let rating: String
-    let title: String
+    let title: String?
     let message: String
     let author: String
     let foreignLanguage: Bool
     let date: String
     let languageCode: String
-    let travelerType: String
+    let travelerType: String?
     let reviewerName: String
     let reviewerCountry: String
     let reviewerProfilePhoto: String?
@@ -34,23 +34,24 @@ extension Review: Decodable {
         case reviewerName, reviewerCountry, reviewerProfilePhoto, isAnonymous, firstInitial
     }
     
-//    init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//        reviewID = try values.decode(Int.self, forKey: .reviewID)
-//        rating = try values.decode(String.self, forKey: .rating)
-//        title = try values.decode(String.self, forKey: .title)
-//        message = try values.decode(String.self, forKey: .message)
-//        author = try values.decode(String.self, forKey: .author)
-//        foreignLanguage = try values.decode(Bool.self, forKey: .foreignLanguage)
-//        date = try values.decode(String.self, forKey: .date)
-//        languageCode = try values.decode(String.self, forKey: .languageCode)
-//        travelerType = try values.decode(String.self, forKey: .travelerType)
-//        reviewerName = try values.decode(String.self, forKey: .reviewerName)
-//        reviewerCountry = try values.decode(String.self, forKey: .reviewerCountry)
-//        reviewerProfilePhoto = try values.decode(String.self, forKey: .reviewerProfilePhoto)
-//        isAnonymous = try values.decode(Bool.self, forKey: .isAnonymous)
-//        firstInitial = try values.decode(String.self, forKey: .firstInitial)
-//    }
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        reviewID = try values.decode(Int.self, forKey: .reviewID)
+        rating = try values.decode(String.self, forKey: .rating)
+        title = try? values.decode(String.self, forKey: .title)
+        message = try values.decode(String.self, forKey: .message)
+        author = try values.decode(String.self, forKey: .author)
+        foreignLanguage = try values.decode(Bool.self, forKey: .foreignLanguage)
+        date = try values.decode(String.self, forKey: .date)
+        languageCode = try values.decode(String.self, forKey: .languageCode)
+        travelerType = try? values.decode(String.self, forKey: .travelerType)
+        reviewerName = try values.decode(String.self, forKey: .reviewerName)
+        reviewerCountry = try values.decode(String.self, forKey: .reviewerCountry)
+        reviewerProfilePhoto = try? values.decode(String.self, forKey: .reviewerProfilePhoto)
+        isAnonymous = try values.decode(Bool.self, forKey: .isAnonymous)
+        firstInitial = try values.decode(String.self, forKey: .firstInitial)
+    }
 }
 
 extension Review: Equatable {
