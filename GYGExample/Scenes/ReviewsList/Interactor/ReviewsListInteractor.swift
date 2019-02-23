@@ -15,9 +15,8 @@ protocol ReviewsListInteractorProtocol {
 class ReviewsListInteractor: ReviewsListInteractorProtocol {
     private var presenter: ReviewsListPresenterProtocol?
     private var manager: ReviewsManagerProtocol?
-    private var currentPage = 0
     private lazy var query = ["count": "1000",
-                              "page": "\(currentPage)"]
+                              "page": "0"]
     
     init(presenter: ReviewsListPresenterProtocol, manager: ReviewsManagerProtocol) {
         self.presenter = presenter

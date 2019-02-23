@@ -10,10 +10,10 @@ import UIKit
 import Cosmos
 
 class ReviewTableViewCell: UITableViewCell {
-    @IBOutlet weak var reviewTitle: UILabel!
-    @IBOutlet weak var reviewRating: CosmosView!
-    @IBOutlet weak var authorName: UILabel!
-    @IBOutlet weak var reviewMessage: UITextView!
+    @IBOutlet private weak var reviewTitle: UILabel!
+    @IBOutlet private weak var reviewRating: CosmosView!
+    @IBOutlet private weak var authorName: UILabel!
+    @IBOutlet private weak var reviewMessage: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

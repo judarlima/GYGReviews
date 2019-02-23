@@ -33,6 +33,10 @@
 		87E2ED462221FDF500171BA0 /* ReviewsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED452221FDF500171BA0 /* ReviewsManagerTests.swift */; };
 		87E2ED472222025400171BA0 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 87E2ED432221FD5400171BA0 /* reviews.json */; };
 		87E2ED49222204F800171BA0 /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED48222204F800171BA0 /* APIServiceMock.swift */; };
+		87E2ED4B222205DE00171BA0 /* ReviewsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED4A222205DE00171BA0 /* ReviewsListPresenterTests.swift */; };
+		87E2ED4D22220A0900171BA0 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED4C22220A0900171BA0 /* MockViewController.swift */; };
+		87E2ED4F22220A6400171BA0 /* ReviewsListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED4E22220A6400171BA0 /* ReviewsListInteractorTests.swift */; };
+		87E2ED5122220D3800171BA0 /* ReviewsManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED5022220D3800171BA0 /* ReviewsManagerMock.swift */; };
 		D3D4B6C80F3ECD89ECBA8C67 /* Pods_GYGExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E4277E0DD94794BD37CF7B /* Pods_GYGExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,10 @@
 		87E2ED432221FD5400171BA0 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
 		87E2ED452221FDF500171BA0 /* ReviewsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsManagerTests.swift; sourceTree = "<group>"; };
 		87E2ED48222204F800171BA0 /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
+		87E2ED4A222205DE00171BA0 /* ReviewsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListPresenterTests.swift; sourceTree = "<group>"; };
+		87E2ED4C22220A0900171BA0 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		87E2ED4E22220A6400171BA0 /* ReviewsListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListInteractorTests.swift; sourceTree = "<group>"; };
+		87E2ED5022220D3800171BA0 /* ReviewsManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsManagerMock.swift; sourceTree = "<group>"; };
 		8FC5E8FDFFE0EC0777D2C68A /* Pods-GYGExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYGExample/Pods-GYGExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F719A7A404281F140C82D7FE /* Pods_GYGExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYGExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,13 +122,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		87749EF822217226007A8CA7 /* Model */ = {
+		87749EF822217226007A8CA7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				87749F0322218E8A007A8CA7 /* Review.swift */,
 				87749F05222192EC007A8CA7 /* ReviewsList.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		87749EF922217275007A8CA7 /* Manager */ = {
@@ -183,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				87B1D4C02220EF7F005681C9 /* Common */,
-				87749EF822217226007A8CA7 /* Model */,
+				87749EF822217226007A8CA7 /* Models */,
 				87B1D4BF2220EF71005681C9 /* Networking */,
 				87B1D4C32220F19F005681C9 /* Scenes */,
 				87B1D4BE2220EF50005681C9 /* Supporting Files */,
@@ -274,6 +282,7 @@
 		87E2ED3F2221FCE500171BA0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				87E2ED4E22220A6400171BA0 /* ReviewsListInteractorTests.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 		87E2ED402221FCF300171BA0 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				87E2ED4A222205DE00171BA0 /* ReviewsListPresenterTests.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -290,6 +300,8 @@
 			children = (
 				87E2ED432221FD5400171BA0 /* reviews.json */,
 				87E2ED48222204F800171BA0 /* APIServiceMock.swift */,
+				87E2ED4C22220A0900171BA0 /* MockViewController.swift */,
+				87E2ED5022220D3800171BA0 /* ReviewsManagerMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -511,8 +523,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E2ED4F22220A6400171BA0 /* ReviewsListInteractorTests.swift in Sources */,
+				87E2ED5122220D3800171BA0 /* ReviewsManagerMock.swift in Sources */,
+				87E2ED4D22220A0900171BA0 /* MockViewController.swift in Sources */,
 				87E2ED3E2221FAF600171BA0 /* CoordinatorTests.swift in Sources */,
 				87E2ED462221FDF500171BA0 /* ReviewsManagerTests.swift in Sources */,
+				87E2ED4B222205DE00171BA0 /* ReviewsListPresenterTests.swift in Sources */,
 				87E2ED49222204F800171BA0 /* APIServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
