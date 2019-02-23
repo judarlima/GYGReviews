@@ -17,7 +17,12 @@ class Coordinator: CoordinatorProtocol {
     let navigationController: UINavigationController
     
     func start() {
-        let reviewsViewController = ReviewsViewController()
+        let presenter = ReviewsListPresenter()
+        let manager = ReviewsManager(service: APIService())
+        let interactor = ReviewsListInteractor(presenter: presenter,
+                                               manager: manager)
+        let reviewsViewController = ReviewsViewController(interactor: interactor)
+        presenter.viewController = reviewsViewController
         navigationController.pushViewController(reviewsViewController, animated: false)
     }
     

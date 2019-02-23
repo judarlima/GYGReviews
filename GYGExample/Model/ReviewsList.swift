@@ -20,6 +20,14 @@ extension ReviewsList: Decodable {
         case totalReviewsComments = "total_reviews_comments"
         case reviews = "data"
     }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        status = try values.decode(Bool.self, forKey: .status)
+        totalReviewsComments = try values.decode(Int.self, forKey: .totalReviewsComments)
+        reviews = try values.decode([Review].self, forKey: .reviews)
+    }
 }
 
 extension ReviewsList: Equatable {
