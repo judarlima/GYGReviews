@@ -23,7 +23,7 @@ class ReviewsListPresenter: ReviewsListPresenterProtocol {
                                                          message: $0.message) }
         viewController?.displayReviews(viewModel: viewModel)
     }
-        
+    
     func presentError(error: ServiceError) {
         viewController?.displayError(message: error.localizedDescription)
     }
