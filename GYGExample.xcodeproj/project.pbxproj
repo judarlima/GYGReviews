@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0B9153EB6593D85E483093 /* Pods_GYGExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F719A7A404281F140C82D7FE /* Pods_GYGExampleTests.framework */; };
 		87749EED22216031007A8CA7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87749EEC22216031007A8CA7 /* Result.swift */; };
 		87749EEF22216088007A8CA7 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87749EEE22216088007A8CA7 /* ServiceError.swift */; };
 		87749EF1222160E8007A8CA7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87749EF0222160E8007A8CA7 /* APIService.swift */; };
@@ -23,6 +24,12 @@
 		87B1D4A92220EF10005681C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B1D4A72220EF10005681C9 /* LaunchScreen.storyboard */; };
 		87B1D4B42220EF10005681C9 /* GYGExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D4B32220EF10005681C9 /* GYGExampleTests.swift */; };
 		87B1D4C22220EFD8005681C9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D4C12220EFD8005681C9 /* Coordinator.swift */; };
+		87E2ED2F2221BF2A00171BA0 /* ReviewsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED2E2221BF2A00171BA0 /* ReviewsListInteractor.swift */; };
+		87E2ED312221BFF000171BA0 /* ReviewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED302221BFF000171BA0 /* ReviewsListPresenter.swift */; };
+		87E2ED342221D00D00171BA0 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED322221D00D00171BA0 /* ReviewTableViewCell.swift */; };
+		87E2ED352221D00D00171BA0 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E2ED332221D00D00171BA0 /* ReviewTableViewCell.xib */; };
+		87E2ED372221E37000171BA0 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2ED362221E37000171BA0 /* ReviewViewModel.swift */; };
+		D3D4B6C80F3ECD89ECBA8C67 /* Pods_GYGExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E4277E0DD94794BD37CF7B /* Pods_GYGExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		096538B76F640F453169F24E /* Pods-GYGExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYGExampleTests/Pods-GYGExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		4756B57D3955101DD9660B86 /* Pods-GYGExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYGExampleTests/Pods-GYGExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ABE60BF870ABC54C86D888F /* Pods-GYGExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYGExample/Pods-GYGExample.release.xcconfig"; sourceTree = "<group>"; };
+		70E4277E0DD94794BD37CF7B /* Pods_GYGExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYGExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87749EEC22216031007A8CA7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		87749EEE22216088007A8CA7 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		87749EF0222160E8007A8CA7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -56,6 +67,13 @@
 		87B1D4B32220EF10005681C9 /* GYGExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYGExampleTests.swift; sourceTree = "<group>"; };
 		87B1D4B52220EF10005681C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B1D4C12220EFD8005681C9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		87E2ED2E2221BF2A00171BA0 /* ReviewsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListInteractor.swift; sourceTree = "<group>"; };
+		87E2ED302221BFF000171BA0 /* ReviewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListPresenter.swift; sourceTree = "<group>"; };
+		87E2ED322221D00D00171BA0 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		87E2ED332221D00D00171BA0 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		87E2ED362221E37000171BA0 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		8FC5E8FDFFE0EC0777D2C68A /* Pods-GYGExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYGExample/Pods-GYGExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F719A7A404281F140C82D7FE /* Pods_GYGExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYGExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D4B6C80F3ECD89ECBA8C67 /* Pods_GYGExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +89,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0B9153EB6593D85E483093 /* Pods_GYGExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F442669486F796C120821C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FC5E8FDFFE0EC0777D2C68A /* Pods-GYGExample.debug.xcconfig */,
+				4ABE60BF870ABC54C86D888F /* Pods-GYGExample.release.xcconfig */,
+				4756B57D3955101DD9660B86 /* Pods-GYGExampleTests.debug.xcconfig */,
+				096538B76F640F453169F24E /* Pods-GYGExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		87749EF822217226007A8CA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +129,27 @@
 			children = (
 				87749EFD22218231007A8CA7 /* ReviewsViewController.swift */,
 				87749EFE22218231007A8CA7 /* ReviewsViewController.xib */,
+				87E2ED322221D00D00171BA0 /* ReviewTableViewCell.swift */,
+				87E2ED332221D00D00171BA0 /* ReviewTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		87749F072221A4EE007A8CA7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				87E2ED2E2221BF2A00171BA0 /* ReviewsListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		87749F082221A4FA007A8CA7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				87E2ED302221BFF000171BA0 /* ReviewsListPresenter.swift */,
+				87E2ED362221E37000171BA0 /* ReviewViewModel.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		87B1D4922220EF0F005681C9 = {
@@ -108,6 +158,8 @@
 				87B1D49D2220EF0F005681C9 /* GYGExample */,
 				87B1D4B22220EF10005681C9 /* GYGExampleTests */,
 				87B1D49C2220EF0F005681C9 /* Products */,
+				1F442669486F796C120821C1 /* Pods */,
+				C9550383E7679B015CD6EC6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +211,7 @@
 				87749EEE22216088007A8CA7 /* ServiceError.swift */,
 				87749EF0222160E8007A8CA7 /* APIService.swift */,
 				87749EF222216132007A8CA7 /* ServiceSetup.swift */,
+				87749EF622216434007A8CA7 /* ReviewServiceSetup.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -175,19 +228,29 @@
 		87B1D4C32220F19F005681C9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				87B1D4C42220F1A6005681C9 /* Review */,
+				87B1D4C42220F1A6005681C9 /* ReviewsList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		87B1D4C42220F1A6005681C9 /* Review */ = {
+		87B1D4C42220F1A6005681C9 /* ReviewsList */ = {
 			isa = PBXGroup;
 			children = (
+				87749F082221A4FA007A8CA7 /* Presenter */,
+				87749F072221A4EE007A8CA7 /* Interactor */,
 				87749EFC2221821E007A8CA7 /* Views */,
 				87749EF922217275007A8CA7 /* Manager */,
-				87749EF622216434007A8CA7 /* ReviewServiceSetup.swift */,
 			);
-			path = Review;
+			path = ReviewsList;
+			sourceTree = "<group>";
+		};
+		C9550383E7679B015CD6EC6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70E4277E0DD94794BD37CF7B /* Pods_GYGExample.framework */,
+				F719A7A404281F140C82D7FE /* Pods_GYGExampleTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87B1D4B82220EF10005681C9 /* Build configuration list for PBXNativeTarget "GYGExample" */;
 			buildPhases = (
+				195C4701032A728E5EF794A9 /* [CP] Check Pods Manifest.lock */,
 				87B1D4972220EF0F005681C9 /* Sources */,
 				87B1D4982220EF0F005681C9 /* Frameworks */,
 				87B1D4992220EF0F005681C9 /* Resources */,
+				5329CEA2B7BAD7D75691D9F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87B1D4BB2220EF10005681C9 /* Build configuration list for PBXNativeTarget "GYGExampleTests" */;
 			buildPhases = (
+				8B36EF7E7B72F32F2BA335AB /* [CP] Check Pods Manifest.lock */,
 				87B1D4AB2220EF10005681C9 /* Sources */,
 				87B1D4AC2220EF10005681C9 /* Frameworks */,
 				87B1D4AD2220EF10005681C9 /* Resources */,
@@ -273,6 +339,7 @@
 			files = (
 				87749F0022218231007A8CA7 /* ReviewsViewController.xib in Resources */,
 				87B1D4A92220EF10005681C9 /* LaunchScreen.storyboard in Resources */,
+				87E2ED352221D00D00171BA0 /* ReviewTableViewCell.xib in Resources */,
 				87B1D4A62220EF10005681C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,22 +353,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		195C4701032A728E5EF794A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GYGExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5329CEA2B7BAD7D75691D9F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GYGExample/Pods-GYGExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYGExample/Pods-GYGExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B36EF7E7B72F32F2BA335AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GYGExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87B1D4972220EF0F005681C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E2ED2F2221BF2A00171BA0 /* ReviewsListInteractor.swift in Sources */,
 				87749EF722216434007A8CA7 /* ReviewServiceSetup.swift in Sources */,
 				87749EF322216132007A8CA7 /* ServiceSetup.swift in Sources */,
 				87749EEF22216088007A8CA7 /* ServiceError.swift in Sources */,
+				87E2ED312221BFF000171BA0 /* ReviewsListPresenter.swift in Sources */,
 				87B1D4C22220EFD8005681C9 /* Coordinator.swift in Sources */,
 				87749EED22216031007A8CA7 /* Result.swift in Sources */,
 				87749F06222192EC007A8CA7 /* ReviewsList.swift in Sources */,
 				87749EF522216270007A8CA7 /* APIConstants.swift in Sources */,
+				87E2ED342221D00D00171BA0 /* ReviewTableViewCell.swift in Sources */,
 				87749F0422218E8A007A8CA7 /* Review.swift in Sources */,
 				87749EFB22217297007A8CA7 /* ReviewsManager.swift in Sources */,
 				87749EFF22218231007A8CA7 /* ReviewsViewController.swift in Sources */,
 				87B1D49F2220EF0F005681C9 /* AppDelegate.swift in Sources */,
+				87E2ED372221E37000171BA0 /* ReviewViewModel.swift in Sources */,
 				87749EF1222160E8007A8CA7 /* APIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +594,7 @@
 		};
 		87B1D4B92220EF10005681C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC5E8FDFFE0EC0777D2C68A /* Pods-GYGExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +613,7 @@
 		};
 		87B1D4BA2220EF10005681C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABE60BF870ABC54C86D888F /* Pods-GYGExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +632,7 @@
 		};
 		87B1D4BC2220EF10005681C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4756B57D3955101DD9660B86 /* Pods-GYGExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +654,7 @@
 		};
 		87B1D4BD2220EF10005681C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096538B76F640F453169F24E /* Pods-GYGExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
