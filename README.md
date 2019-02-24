@@ -24,7 +24,7 @@ Were implemented Unit Tests for:
 - ReviewsListInteractor
 
 ## Things To Improve
-- [ ] Remove the hardcoded `count` amount that makes the APIService receives into the request a value of `1000` that makes the application loads all the available reviews before presents.
+- [ ] Remove the hardcoded `count` amount that pass to the APIService request a value of `1000` that makes the application loads all the available reviews before presents.
 - [ ] Implement a infinite scroll its a good alternative for the problem above, as the Interactor will request the next reviews page every time the user scrolls the tableView to the end, this will happens while still have a valid page at the service.
 - [ ] Another Alternative is create a "load more" button at the tableview footer, to let the user decide when to load more reviews.
 - [ ] Implements a option to sort the reviews by: date, rates, countries and users name.
