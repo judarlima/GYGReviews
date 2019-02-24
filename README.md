@@ -28,6 +28,7 @@ Were implemented Unit Tests for:
 - [ ] Implement a infinite scroll its a good alternative for the problem above, as the Interactor will request the next reviews page every time the user scrolls the tableView to the end, this will happens while still have a valid page at the service.
 - [ ] Another Alternative is create a "load more" button at the tableview footer, to let the user decide when to load more reviews.
 - [ ] Implements a option to sort the reviews by: date, rates, countries and users name.
+- [ ] Implements UI tests.
 - [ ] Improve the application UI and makes more elegant.
  
 ## Requirements
