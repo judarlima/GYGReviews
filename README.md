@@ -7,7 +7,7 @@
 - The ViewModel is different in this architecture because she doesn't have business logic, her responsibility is only abstract the business model data into a struct that only makes sense to the presentation layer, trying not to expose those businesses model information at viewController.
 - The layers into this architecture respect a unidirectional flow (viewController -> Interactor -> Presenter -> ViewController), this helps to prevent reference cycles.
 <br><br>
-![](https://i.imgur.com/k3a08L6.png)
+![](https://i.imgur.com/sGQe76A.png)
 
 ## Third party frameworks
  - The only third party framework is <b>Cosmos</b> to handle with the stars rating view.
