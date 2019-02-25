@@ -24,7 +24,7 @@ class ReviewsManagerTests: XCTestCase {
         let expectedFirstAuthorName = "a GetYourGuide customer – Germany"
         var managerResult: ReviewsList?
         
-        sut.fetchReviews(with: [:]) { (result) in
+        sut.fetchReviews { (result) in
             if case let .success(reviews) = result {
                 managerResult = reviews
             } else {
@@ -47,7 +47,7 @@ class ReviewsManagerTests: XCTestCase {
         
         serviceMock.serviceError = ServiceError.couldNotParseObject
         
-        sut.fetchReviews(with: [:]) { (result) in
+        sut.fetchReviews { (result) in
             if case let .failure(error) = result {
                 managerResult = error
             } else {

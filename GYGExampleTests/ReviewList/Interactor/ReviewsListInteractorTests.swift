@@ -38,25 +38,21 @@ class ReviewsListInteractorTests: XCTestCase {
     }
     
     func test_when_call_listReviews_and_manager_returns_a_ReviewsList_model_then_pass_the_model_to_presenter() {
-        let expectedQuery = ["count": "1000", "page": "0"]
         let expectedPresentedList = ReviewsManagerMock.generateReviewList()
         
         sut.listReviews()
         
-        XCTAssertEqual(manager.interactorQuery!, expectedQuery)
         XCTAssertEqual(presenter.presentedList!, expectedPresentedList)
         XCTAssertNil(presenter.presentedError)
     }
     
     func test_when_call_listReviews_and_manager_returns_a_ServiceError_then_pass_the_error_to_presenter() {
-        let expectedQuery = ["count": "1000", "page": "0"]
         let expectedPresentedError = ServiceError.couldNotFindHost
         
         manager.serviceError = ServiceError.couldNotFindHost
         
         sut.listReviews()
         
-        XCTAssertEqual(manager.interactorQuery!, expectedQuery)
         XCTAssertEqual(presenter.presentedError!, expectedPresentedError)
         XCTAssertNil(presenter.presentedList)
     }

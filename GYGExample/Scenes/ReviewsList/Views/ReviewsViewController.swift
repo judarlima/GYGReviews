@@ -90,9 +90,11 @@ extension ReviewsViewController: UITableViewDataSource, UITableViewDelegate {
         let messageString = text
         let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)]
         let attributedString : NSAttributedString = NSAttributedString(string: messageString, attributes: attributes)
-        let rect: CGRect = attributedString.boundingRect(with: CGSize(width: view.frame.width,
-                                                                      height: CGFloat.greatestFiniteMagnitude),
-                                                         options: .usesLineFragmentOrigin, context: nil)
+        let rect: CGRect = attributedString.boundingRect(
+            with: CGSize(width: view.frame.width,
+                         height: CGFloat.greatestFiniteMagnitude),
+            options: .usesLineFragmentOrigin, context: nil
+        )
         
         let requiredSize:CGRect = rect
         let elementsConstraintsDifference: CGFloat = 120
