@@ -190,6 +190,7 @@
 		87B1D49D2220EF0F005681C9 /* GYGExample */ = {
 			isa = PBXGroup;
 			children = (
+				87E2ED522222305900171BA0 /* Extensions */,
 				87B1D4C02220EF7F005681C9 /* Common */,
 				87749EF822217226007A8CA7 /* Models */,
 				87B1D4BF2220EF71005681C9 /* Networking */,
@@ -312,6 +313,13 @@
 				87E2ED452221FDF500171BA0 /* ReviewsManagerTests.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		87E2ED522222305900171BA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C9550383E7679B015CD6EC6F /* Frameworks */ = {

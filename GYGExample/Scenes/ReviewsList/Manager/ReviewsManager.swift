@@ -9,22 +9,24 @@
 import Foundation
 
 protocol ReviewsManagerProtocol {
-    func fetchReviews(with params: [String: String], completion: @escaping (Result<ReviewsList>) -> Void)
+    func fetchReviews(completion: @escaping (Result<ReviewsList>) -> Void)
 }
 
 class ReviewsManager: ReviewsManagerProtocol {
     private let service: ServiceProtocol
-    typealias Query = [String: String]
+    private lazy var allReviewsQuery = ["count": "1000", "page": "0"]
+    
+    
     init(service: ServiceProtocol) {
         self.service = service
     }
     
-    func fetchReviews(with query: Query, completion: @escaping (Result<ReviewsList>) -> Void) {
-        service.requestData(with: ReviewServiceSetup.mostPopularBelinTour(query: query)) { (result) in
+    func fetchReviews(completion: @escaping (Result<ReviewsList>) -> Void) {
+        service.requestData(with: ReviewServiceSetup.mostPopularBelinTour(query: allReviewsQuery)) { (result) in
             switch result{
             case let .success(data):
                 do {
-                let decoder = JSONDecoder()
+                    let decoder = JSONDecoder()
                     let reviewsList = try decoder.decode(ReviewsList.self, from: data)
                     completion(.success(reviewsList))
                 } catch {

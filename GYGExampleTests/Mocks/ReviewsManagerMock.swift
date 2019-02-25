@@ -10,11 +10,9 @@ import Foundation
 @testable import GYGExample
 
 class ReviewsManagerMock: ReviewsManagerProtocol {
-    var interactorQuery: [String: String]?
     var serviceError: ServiceError?
     
-    func fetchReviews(with params: [String : String], completion: @escaping (Result<ReviewsList>) -> Void) {
-        interactorQuery = params
+    func fetchReviews(completion: @escaping (Result<ReviewsList>) -> Void) {
         guard let error = serviceError else {
             completion(.success(ReviewsManagerMock.generateReviewList()))
             return

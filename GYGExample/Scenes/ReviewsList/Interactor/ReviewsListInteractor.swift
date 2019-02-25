@@ -15,8 +15,6 @@ protocol ReviewsListInteractorProtocol {
 class ReviewsListInteractor: ReviewsListInteractorProtocol {
     private var presenter: ReviewsListPresenterProtocol?
     private var manager: ReviewsManagerProtocol?
-    private lazy var query = ["count": "1000",
-                              "page": "0"]
     
     init(presenter: ReviewsListPresenterProtocol, manager: ReviewsManagerProtocol) {
         self.presenter = presenter
@@ -24,7 +22,7 @@ class ReviewsListInteractor: ReviewsListInteractorProtocol {
     }
     
     func listReviews() {
-        manager?.fetchReviews(with: query, completion: { [weak self] (result) in
+        manager?.fetchReviews { [weak self] (result) in
             guard let interactor = self else { return }
             switch result {
             case let .success(reviews):
@@ -32,6 +30,6 @@ class ReviewsListInteractor: ReviewsListInteractorProtocol {
             case let .failure(error):
                 interactor.presenter?.presentError(error: error)
             }
-        })
+        }
     }    
 }
